@@ -1,0 +1,85 @@
+body {
+    background-color: #333333;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.brett {
+    display: grid;
+    grid-template-columns: repeat(4, 120px);
+    gap: 20px;
+    box-sizing: border-box;
+    margin: 50px auto;
+    width: max-content;
+    padding-bottom: 20%;
+}
+
+h3 {
+    width: fit-content;
+    height: fit-content;
+    background-color: #eeeeee;
+    border: 5px solid #444444;
+    margin: 0px 0px;
+    font-size: 28px;
+}
+
+button {
+    font-size: large;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.main {
+    margin: 30px;
+    display: grid;
+    grid-template-columns: 10% 80%;
+}
+
+.kort {
+    height: 120px;
+    background-color: #111111;
+    border: 5px solid #444444;
+    cursor: pointer;
+}
+
+.overskrift {
+    width: fit-content;
+    height: fit-content;
+    padding: 10px;
+    margin: 30px auto;
+    background-color: #eeeeee;
+    border: 5px solid #444444;
+    font-size: 40px;
+}
+
+.tellerOversikt {
+    width: fit-content;
+    height: fit-content;
+    padding: 0px 10px;
+    background-color: #eeeeee;
+    border: 5px solid #444444;
+}
+
+#teller {
+    font-size: 20px;
+}
+
+#body_memory {
+    display: none;
+}
+
+.memory_information {
+    position: relative;
+    bottom: 849px;
+    left: 153px;
+    width: 200px;
+    height: fit-content;
+    padding: 0 10px;
+    background-color: #eeeeee;
+    border: 5px solid #444444;
+    font-size: 20px;
+}
+
+.trekk_memory_h2 {
+    color: black;
+}

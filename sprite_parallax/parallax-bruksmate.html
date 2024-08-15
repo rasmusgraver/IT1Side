@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="bilder/swords.png">
+    <title>Spritesheet/Parallax</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+
+    <div class="mobil-burgermeny">
+        <img src="bilder/bar.png" alt="burgermeny">
+    </div>
+
+    <header class="header-main">
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="bilder/swords.png" alt="Swords">
+            </a>
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="#">Spritesheet</a>
+                    <ul>
+                        <li><a href="spritesheet-om.html">Om Spritesheet</a></li>
+                        <li><a href="spritesheet-bruksmate.html">Bruksmåte</a></li>
+                        <li><a href="spritesheet-eksempler.html">Eksempler</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Parallax</a>
+                    <ul>
+                        <li><a href="parallax-om.html">Om Parallax</a></li>
+                        <li><a href="parallax-bruksmate.html">Bruksmåte</a></li>
+                        <li><a href="parallax-eksempler.html">Eksempler</a></li>
+                    </ul>
+                </li>
+                <li><a href="./Spill/spill.html">Spill</a></li>
+            </ul>
+        </nav>
+        <div class="sf">
+            <form action="" method="post" id="searchForm">
+                <input type="text" name="search" placeholder="Search..." id="searchInput" data-search
+                    autocomplete="off">
+                <button type="submit" id="searchButton"><img src="bilder/magnifying-glass.png"
+                        alt="search button"></button>
+            </form>
+            <div class="ikoner">
+                <img src="bilder/board-game.png" alt="Board Game">
+            </div>
+        </div>
+    </header>
+
+    <section class="forside">
+        <div class="hjem-tekst">
+            <h1>Bruksmåte <br> Parallax</h1>
+            <h2>Hvordan bruker <br> man egentlig parallax?</h2>
+            <a href="parallax-eksempler.html" class="knapp">Eksempler</a>
+        </div>
+
+        <div class="forsidebilde">
+            <img src="bilder/layer.png" alt="layers">
+        </div>
+    </section>
+
+    <section class="spritesheet-section">
+        <h3 class="spritesheet-info-overskrift">Typisk Bruksmåte</h3>
+        <div class="spritesheet-info">
+            <img src="bilder/cloud-coding.png" alt="Cloud Coding">
+            <div id="spritesheet-bruk-liste">
+                <ul>
+                    <li>Forbered bilder:
+                        Lag flere bilder av samme størrelse for parallax-effekten.</li>
+                        <br>
+                    <li>Definer størrelse:
+                        Velg en størrelse for hvert bilde, for eksempel 1920px x 1080px.</li>
+                        <br>
+                    <li>HTML:
+                        Opprett HTML-elementer for hvert lag av parallax-effekten.</li>
+                        <br>
+                    <li>CSS:
+                        Bruk CSS til å style hvert lag og angi bakgrunnsbilder.</li>
+                        <br>
+                    <li>JavaScript:
+                        Lytt etter musebevegelser og juster hvert lags posisjon.</li>
+                        <br>
+                    <li>Optimalisering:
+                        Minimer bildefilene og implementer caching for bedre ytelse.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="parallax-bruksmate-eksempler">
+        <div class="forside-overskrift" id="spritesheet-bruksmate-spill">
+            <h2>Spill som utnytter parallax</h2>
+        </div>
+        <div class="album-grid" id="spritesheet-bruksmate-spill-tekst">
+            <div>
+                <img src="bilder/GTA5.jpeg" alt="Grand Theft Auto IV">
+                <h2>Spill: Grand Theft auto IV</h2>
+            </div>
+            <div>
+                <img src="bilder/MSM2.webp" alt=" Marvel's spider man 2">
+                <h2>Spill: Marvel's spider man 2</h2>
+            </div>
+            <div>
+                <img src="bilder/FO3.jpeg" alt="Fallout 3">
+                <h2>Spill: Fallout 3</h2>
+            </div>
+        </div>
+    </section>
+
+    <section id="footerid">
+        <div class="footer">
+            <div class="main">
+
+                <div class="footer-liste" id="footer-linker">
+                    <h3>Spritesheet's</h3>
+                    <ul>
+                        <li><a href="https://kidscancode.org/godot_recipes/3.x/animation/spritesheet_animation/index.html">Eksempel 1</a>
+                        </li>
+                        <li><a href="https://doc.stride3d.net/latest/en/manual/sprites/index.html">Eksempel 2</a></li>
+                        <li><a href="https://medium.com/@jonathan.k.tung/sprite-animations-on-the-web-48ec1bfe190e">Eksempel 3</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="footer-liste" id="footer-linker">
+                    <h3>Spritesheet  Bruk</h3>
+                    <ul>
+                        <li><a href="https://www.codeandweb.com/texturepacker/tutorials/how-to-create-a-sprite-sheet">Create</a>
+                        </li>
+                        <li><a href="https://codeshack.io/images-sprite-sheet-generator/">Generate</a></li>
+                        <li><a href="https://www.w3schools.com/css/css_image_sprites.asp)">W3S Use</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-liste" id="footer-linker">
+                    <h3>Parallax</h3>
+                    <ul>
+                        <li><a href="https://medium.com/@jonathansychan/the-beauty-of-multi-parallax-scrolling-c093f583b908">Eksempel 1</a></li>
+                        <li><a href="https://opengameart.org/content/3-parallax-backgrounds">Eksempel 2</a>
+                        </li>
+                        <li><a href="https://www.gamedevmarket.net/asset/2d-field-parallax-background">Eksempel 3</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-liste" id="footer-linker">
+                    <h3>Parallax  Bruk</h3>
+                    <ul>
+                        <li><a href="https://blog.logrocket.com/create-parallax-scrolling-css/">Create</a></li>
+                        <li><a href="https://www.vev.design/parallax-website/">Generate</a></li>
+                        <li><a href="https://www.w3schools.com/howto/howto_css_parallax.asp">W3S Use</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="javascript/hamburgermeny.js"></script>
+<script src="javascript/sok.js"></script>
+</body>
+</html>

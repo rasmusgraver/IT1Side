@@ -1,0 +1,676 @@
+@font-face {
+    font-family: Roboto;
+    src: url(fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: RobotoMedium;
+    src: url(fonts/Roboto-Medium.ttf);
+}
+
+@font-face {
+    font-family: RobotoBold;
+    src: url(fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: DGOR;
+    src: url(fonts/DelaGothicOne-Regular.ttf);
+}
+
+* {
+    scroll-behavior: smooth;
+}
+
+:root {
+    --menu-count: 5;
+    --stor-font: 5rem;
+    --h2-font: 2.5rem;
+    --p-font: 1.06rem;
+
+    --primary: #14304e;
+    --secondarydark: #001233;
+    --GUL: #fda317;
+    --GRONN: #00d796;
+    --BLACK: #0B0C10;
+    --DARK: #1F2833;
+    --GREY: #C5C6C7;
+    --LIGHT: #66FCF1;
+    --TUR: #45A29E;
+}
+
+body {
+    background-color: var(--DARK);
+}
+
+.mobil-burgermeny {
+    display: none;
+}
+
+.header-main {
+    width: 100%;
+    padding: 0 60px;
+    height: 80px;
+    background-color: var(--DARK);
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+}
+
+.header-main nav {
+    display: flex;
+}
+
+.header-main .logo {
+    height: 40px;
+    width: fit-content;
+    align-self: center;
+    cursor: pointer;
+}
+
+.header-main .logo img {
+    height: 100%;
+}
+
+.header-main ul {
+    height: 100%;
+    padding-left: 40px;
+    list-style: none;
+    display: flex;
+    align-self: center;
+}
+
+.header-main ul li {
+    position: relative;
+}
+
+.header-main ul li a {
+    display: block;
+    padding: 0 10px;
+    height: 100%;
+    line-height: 80px;
+    font-size: 1rem;
+    font-family: RobotoMedium;
+    color: #fff;
+    background-color: var(--DARK);
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all ease-in-out 100ms;
+}
+
+.header-main ul li a:hover {
+    background-color: #fff;
+    color: black;
+}
+
+/* Dropdown styling start */
+
+.header-main ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    display: none;
+    position: absolute;
+    left: -40px;
+    transition: all ease-in-out 100ms;
+}
+
+.header-main ul li ul li a {
+    white-space: nowrap;
+}
+
+ul li:hover>ul {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+}
+
+/* Dropdown styling slutt */
+
+/* Right side navbar*/
+
+.header-main .sf {
+    align-self: center;
+    display: flex;
+}
+
+.header-main form {
+    height: 40px;
+    padding-right: 5px;
+    display: flex;
+   
+    width: fit-content;
+    align-self: center;
+    background-color: #fff;
+}
+
+.header-main form input {
+    height: 100%;
+    width: 300px;
+    padding: 0 10px 0 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-family: Roboto;
+}
+
+.header-main form button {
+    width: fit-content;
+    padding: 0 5px 0 10px;
+}
+
+.header-main form button img {
+    height: 24px;
+    padding-top: 15%;
+    cursor: pointer;
+}
+
+.header-main .ikoner {
+    height: 60px;
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.header-main .ikoner img {
+    height: 40px;
+    margin-left: 10px;
+    align-self: center;
+    color: white;
+}
+
+/* Right side navbar*/
+
+@media only screen and (max-width: 1149px) {
+
+
+    .header-main {
+        display: none;
+    }
+
+    .mobil-burgermeny {
+        display: flex;
+        justify-content: center;
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: var(--DARK);
+    }
+
+    .mobil-burgermeny img {
+        height: 80%;
+        align-self: center;
+    }
+
+    .header-main {
+        height: 100vh;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 0;
+        justify-content: flex-start;
+    }
+
+    .header-main nav {
+        width: 100%;
+        height: 80vh;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: stretch;
+    }
+
+    .header-main .logo {
+        height: 30%;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+    }
+
+    .header-main .logo img {
+        height: 60%;
+        align-self: center;
+    }
+
+    .header-main ul {
+        height: 70%;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: space-between;
+    }
+
+    .header-main ul li {
+        width: 100%;
+        height: calc(100% / var(--menu-count));
+        padding: 0;
+        margin: 0;
+        border-top: 1px solid #ddd;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        transform: all ease-in-out 100ms;
+    }
+
+    .header-main ul li:nth-last-child(1) {
+        border-bottom: 1px solid #ddd;
+    }
+
+    .header-main ul li a {
+        width: 100%;
+        height: fit-content;
+        padding: 0;
+        margin: 0;
+        text-align: center;
+    }
+
+    .header-main ul li a:hover {
+        background-color: transparent;
+        color: #fff;
+    }
+
+    .header-main nav {
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    .header-main ul li ul {
+        display: none;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 2000;
+
+    }
+
+    .header-main ul li ul li {
+        height: fit-content;
+        display: block;
+        background-color: #111;
+    }
+
+    .header-main ul li ul li a {
+        background-color: #111;
+        color: #fff;
+    }
+
+    .header-main ul li ul li a:hover {
+        background-color: #111;
+        color: #fff;
+    }
+
+    .header-main ul li:focus>ul,
+    .header-main ul li:hover>ul {
+        display: flex;
+        visibility: visible;
+        opacity: 1;
+    }
+
+    .header-main .sf {
+        width: 100%;
+        height: 20vh;
+        padding: 0;
+        margin: 0;
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+
+    .header-main form {
+        padding-right: 0;
+        width: 90%;
+        height: 40%;
+    }
+
+    .header-main form input {
+        width: 100%;
+        height: 100%;
+        padding: 0 10px 0 20px;
+        font-size: 1.6rem;
+    }
+
+    .header-main form button {
+        padding: 0 5%;
+    }
+
+    .header-main form button img {
+        height: 5vh;
+        padding-top: 15%;
+    }
+
+    .header-main .ikoner {
+        height: 50%;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+    }
+
+    .header-main .ikoner img {
+        height: 60%;
+        margin: 0 2%;
+        padding: 0;
+    }
+}
+
+
+section {
+    padding: 70px 17%;
+}
+
+.forside {
+    margin-top: 85px;
+    width: 100%;
+    min-height: 90vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.5rem;
+    align-items: center;
+}
+
+.forsidebilde img {
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+}
+
+.hjem-tekst h1 {
+    font-size: var(--stor-font);
+    color: var(--LIGHT);
+    font-family: DGOR;
+}
+
+.hjem-tekst h2 {
+    font-size: var(--h2-font);
+    color: #fff;
+    font-family: DGOR;
+    margin: 1rem 0 2rem;
+    text-shadow: 2px 0 var(--secondarydark), -2px 0 var(--secondarydark), 0 2px var(--secondarydark), 0 -2px var(--secondarydark),
+        1px 1px var(--secondarydark), -1px -1px var(--secondarydark), 1px -1px var(--secondarydark), -1px 1px var(--secondarydark);
+}
+
+.knapp {
+    display: inline-block;
+    padding: 14px 24px;
+    color: white;
+    border-radius: 0.5rem;
+    font-family: DGOR;
+    border: 0.2rem solid var(--LIGHT);
+}
+
+.knapp:hover {
+    transform: scale(1.2) translateY(10px);
+    transition: .4s;
+    cursor: pointer;
+}
+
+/* BRUKSMATE SPILL EKSEMPLER START */
+
+.forside-overskrift {
+    text-align: center;
+    margin-bottom: 3.5rem;
+    font-family: DGOR;
+}
+
+.forside-overskrift h2 {
+    font-size: var(--h2-font);
+}
+
+#forside-overskrift-albumer h2 {
+    color: var(--primary);
+}
+
+.album-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2%;
+
+}
+
+.album-grid img {
+    width: 90%;
+}
+
+.album-grid h2 {
+    text-align: center;
+    font-family: DGOR;
+    color: var(--primary);
+}
+
+/* BRUKSMATE SPILL EKSEMPLER SLUTT */
+
+/* FOOTER START */
+
+#footerid {
+    background-color: #fff;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer {
+    padding: 10px 0;
+}
+
+.footer-liste {
+    width: 25%;
+}
+
+.footer-liste h3 {
+    font-size: 1.2rem;
+    color: var(--DARK);
+    position: relative;
+    margin-bottom: 25px;
+    font-family: DGOR;
+}
+
+.footer-liste h3::before {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 70px;
+    left: 0;
+    bottom: -8px;
+    background: var(--LIGHT);
+}
+
+.footer-liste ul li {
+    color: var(--DARK);
+    font-family: DGOR;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+
+#footer-linker {
+    cursor: pointer;
+}
+
+#footer-linker ul li:hover {
+    color: var(--LIGHT);
+    transform: scale(1.05) translateY(2px);
+    transition: .4s;
+}
+
+/* FOOTER SLUTT */
+
+/* OM SPRITESHEET START */
+
+/* OM SPRITESHEET SECTION 2 (INFORMASJON) START */
+
+.spritesheet-section {
+    background: #fff;
+}
+
+#spritesheet-section2 {
+    background-color: var(--DARK);
+}
+
+#spritesheet-section2 p {
+    color: #fff;
+}
+
+.spritesheet-info-overskrift {
+    text-align: center;
+    font-size: var(--stor-font);
+    color: var(--LIGHT);
+    text-shadow: 2px 0 var(--BLACK), -2px 0 var(--BLACK), 0 2px var(--BLACK), 0 -2px var(--BLACK),
+        1px 1px var(--BLACK), -1px -1px var(--BLACK), 1px -1px var(--BLACK), -1px 1px var(--BLACK);
+    font-family: DGOR;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.spritesheet-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2%;
+    margin-top: 40px;
+}
+
+.spritesheet-info p {
+    text-align: center;
+    color: var(--DARK);
+    font-family: DGOR;
+    font-size: var(--p-font);
+}
+
+.spritesheet-info img {
+    width: 100%;
+}
+
+.spritesheet-info h4 {
+    text-align: center;
+    font-size: 20px;
+    color: var(--LIGHT);
+    font-family: DGOR;
+    text-shadow: 2px 0 var(--DARK), -2px 0 var(--DARK), 0 2px var(--DARK), 0 -2px var(--DARK),
+    1px 1px var(--DARK), -1px -1px var(--DARK), 1px -1px var(--DARK), -1px 1px var(--DARK);
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+/* OM SPRITESHEET SECTION 2 (INFORMASJON) SLUTT */
+
+/* OM SPRITESHEET-BRUKSMATE START */
+
+#spritesheet-bruk-liste {
+    color: var(--DARK);
+    font-family: DGOR;
+    font-size: var(--p-font);
+}
+
+#spritesheet-bruk-liste li::before {
+    content: "•"; 
+    margin-right: 0.5em;
+}
+
+/* OM SPRITESHEET-BRUKSMATE 2 (INFORMASJON) SLUTT */
+
+/* SPRITESHEET BRUKSMATE - SPILL EKSEMPLER START */
+
+#spritesheet-bruksmate-spill h2 {
+    color: var(--GRONN);
+    text-shadow: 2px 0 var(--BLACK), -2px 0 var(--BLACK), 0 2px var(--BLACK), 0 -2px var(--BLACK),
+        1px 1px var(--BLACK), -1px -1px var(--BLACK), 1px -1px var(--BLACK), -1px 1px var(--BLACK);
+}
+
+#spritesheet-bruksmate-spill-tekst h2 {
+    color: var(--GRONN);
+    text-shadow: 2px 0 var(--BLACK), -2px 0 var(--BLACK), 0 2px var(--BLACK), 0 -2px var(--BLACK),
+        1px 1px var(--BLACK), -1px -1px var(--BLACK), 1px -1px var(--BLACK), -1px 1px var(--BLACK);
+}
+
+/* SPRITESHEET BRUKSMATE - SPILL EKSEMPLER SLUTT */
+
+/* OM SPRITESHEET EKSEMPLER START */
+
+#spritesheet-eksempler {
+    background-color: #fff;
+}
+
+/* OM SPRITESHEET EKSEMPLER SLUTT */
+
+/* OM PARALLAX BRUKSMATE EKSEMPLER START */
+
+#parallax-bruksmate-eksempler h2 {
+    color: var(--GUL);
+}
+
+/* OM PARALLAX BRUKSMATE EKSEMPLER SLUTT */
+
+/* RESPONSIV START */
+
+@media (max-width: 1560px) {
+
+    :root {
+        --stor-font: 3.5rem;
+        --h2-font: 2rem;
+    }
+}
+
+@media (max-width: 1140px) {
+    section {
+        padding: 50px 8%;
+    }
+
+    .footer-liste {
+        width: 50%;
+        margin-bottom: 10px;
+    }
+
+    .spritesheet-info {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+
+@media (max-width: 720px) {
+    .forside {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .forside-om {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .forside-om img {
+        order: 2;
+    }
+
+    section {
+        padding: 100px 7%;
+    }
+
+    :root {
+        --stor-font: 2.4rem;
+        --h2-font: 1.2rem;
+    }
+
+}
+
+@media (max-width: 575px) {
+    .footer-liste {
+        width: 100%;
+
+    }
+
+    .album-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .album-grid img {
+        margin-left: 20px;
+    }
+}
+
+/* RESPONSIV SLUTT */

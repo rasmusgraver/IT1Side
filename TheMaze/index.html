@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Maze</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="maze.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Jacquarda+Bastarda+9&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style_memory.css">
+    <link rel="stylesheet" href="mulvarp.css">
+</head>
+
+<body class="intro">
+    <section class="body_portal">
+
+
+        <section class="sec">
+            <h1 class="introH1">The Maze</h1>
+            <div class="clipPath-overgang"></div>
+            <div id="gate"></div>
+        </section>
+
+
+
+        <footer class="footer">
+            <div class="arstall">© 2024</div>
+            <div class="drevet_av">
+                <table>
+                    <tr>
+                        <th>Drevet av:</th>
+                        <td class="td_footer">•Sondre</td>
+                        <td class="td_footer">•Lucas</td>
+                        <td class="td_footer">•Fabian</td>
+                        <td class="td_footer">•Marcus</td>
+                        <td class="td_footer">•Christoffer</td>
+                    </tr>
+                </table>
+            </div>
+
+        </footer>
+    </section>
+
+    <section class="body_maze">
+
+        <div id="maze" class="maze_container">
+
+            <div id="prikk" class="prikk"></div>
+        </div>
+
+
+
+        <div class="knapp">
+            <button id="knapp" onclick="myFunction()"> Trykk meg</button>
+        </div>
+
+        <div id="meny" class="meny">
+            <div class="overskrift">
+                <p></p>
+                <p class="endre_figur"> Endre figuren</p>
+                <i onclick="myFunctionX()" id="icon" class='bx bx-x'></i>
+            </div>
+
+            <div class="farge">
+                <p class="farge_tekst"> Farger </p>
+                <div onclick="myFunctionRed()" id="red" class="farge_div_1"></div>
+                <div onclick="myFunctionBlue()" id="blue" class="farge_div_2"></div>
+                <div onclick="myFunctionGreen()" id="green" class="farge_div_3"></div>
+                <div onclick="myFunctionYellow()" id="yellow" class="farge_div_4"></div>
+                <div onclick="myFunctionPurple()" id="purple" class="farge_div_5"></div>
+                <div onclick="myFunctionBrown()" id="brown" class="farge_div_6"></div>
+                <div onclick="myFunctionGrey()" id="grey" class="farge_div_7"></div>
+                <div onclick="myFunctionPink()" id="pink" class="farge_div_8"></div>
+                <div onclick="myFunctionBlack()" id="black" class="farge_div_9"></div>
+            </div>
+            <br>
+            <div class="form">
+                <p class="form_tekst">Former</p>
+                <div onclick="myFunctionCircle()" id="circle" class="form_div_1"></div>
+                <div onclick="myFunctionSquare()" id="square" class="form_div_2"></div>
+                <div onclick="myFunctionEllipse()" id="ellipse" class="form_div_3"></div>
+                <div onclick="myFunctionRoundedSquare()" id="roundedSquare" class="form_div_4"></div>
+                <div onclick="myFunctionEmoji1()" class="form_div_5"> ⭐️</div>
+                <div onclick="myFunctionEmoji2()" class="form_div_6"> 🌮</div>
+                <div onclick="myFunctionEmoji3()" class="form_div_7"> 🏀</div>
+                <div onclick="myFunctionEmoji4()" class="form_div_8"> 🚁</div>
+                <div onclick="myFunctionEmoji5()" class="form_div_9"> 🗿</div>
+
+            </div>
+
+        </div>
+
+        <img id="key_image1" src="Bilder/key1.jpg">
+        <img id="key_image2" src="Bilder/key2.jpg">
+        <img id="key_image3" src="Bilder/key3.jpg">
+        <img id="arrow_image" src="Bilder/arrow1.jpg">
+
+        <div id="keys_abc" class="keys_abc">
+            <div id="keys_counter" class="keys_counter"> Nøkler samlet</div>
+            <div class="keys_container">
+                <div class="key_position_1"></div>
+                <div class="key_position_2"></div>
+                <div class="key_position_3"></div>
+            </div>
+
+        </div>
+        <div id="gratulerer" class="gratulerer"> Gratulerer! Du klarte det</div>
+
+        <div id="ti_sekunder" class="ti_sekunder">10 SEKUNDER IGJEN!</div>
+
+        <div class="timer_abc">
+            <div class="timer_tekst">Tid igjen:</div>
+            <div id="timer" class="timer"></div>
+        </div>
+
+    </section>
+
+    <section id="body_memory" class="body_memory">
+        <h1 class="overskrift">Memory!</h1>
+        <div class="main">
+            <div class="tellerOversikt">
+                <h2 class="trekk_memory_h2">Antall trekk:</h2>
+                <h4 id="teller">0</h4>
+            </div>
+            <div class="brett" id="brett"></div>
+            <div class="memory_information"> Klar spillet innen 20 trekk</div>
+            <button id="reset-btn" style="display: none;"> Reset game</button>
+        </div>
+    </section>
+
+    <section class="quiz_body">
+        <div class="overskriftquiz">
+        </div>
+
+        <section class="body_quiz">
+            <div class="quiz-container">
+                <div class="sporsmal-container">
+                    <p>Spørsmål 1: Hva står forkortelsen "HTTP" for?</p>
+                    <div class="alternativer-container">
+                        <label class="alternativ-label"><input type="radio" name="q1" value="A"> A. HyperText Transfer
+                            Protocol </label>
+                        <label class="alternativ-label"><input type="radio" name="q1" value="B"> B. High-Tech Transfer
+                            Process</label>
+                        <label class="alternativ-label"><input type="radio" name="q1" value="C"> C. Hyperlink and Text
+                            Transmission Protocol</label>
+                        <label class="alternativ-label"><input type="radio" name="q1" value="D"> D. Hosted Transfer
+                            Protocol</label>
+                    </div>
+                </div>
+
+                <div class="sporsmal-container">
+                    <p>Spørsmål 2: Hva er 249 i binærtall?</p>
+                    <div class="alternativer-container">
+                        <label class="alternativ-label"><input type="radio" name="q2" value="A"> A. 11111010</label>
+                        <label class="alternativ-label"><input type="radio" name="q2" value="B"> B. 11111001</label>
+                        <label class="alternativ-label"><input type="radio" name="q2" value="C"> C. 11111011</label>
+                        <label class="alternativ-label"><input type="radio" name="q2" value="D"> D. 11011010</label>
+                    </div>
+                </div>
+
+                <div class="sporsmal-container">
+                    <p>Spørsmål 3: Hvilket av disse lydformatene er tapsfritt?</p>
+                    <div class="alternativer-container">
+                        <label class="alternativ-label"><input type="radio" name="q3" value="A"> A. MP3 </label>
+                        <label class="alternativ-label"><input type="radio" name="q3" value="B"> B. ACC</label>
+                        <label class="alternativ-label"><input type="radio" name="q3" value="C"> C. MP4</label>
+                        <label class="alternativ-label"><input type="radio" name="q3" value="D"> D. WAV</label>
+                    </div>
+                </div>
+
+                <div class="sporsmal-container">
+                    <p>Spørsmål 4: Hva heter disse tegnene: [] ?</p>
+                    <div class="alternativer-container">
+                        <label class="alternativ-label"><input type="radio" name="q4" value="A"> A. Braces</label>
+                        <label class="alternativ-label"><input type="radio" name="q4" value="B"> B. Stag</label>
+                        <label class="alternativ-label"><input type="radio" name="q4" value="C"> C. Array</label>
+                        <label class="alternativ-label"><input type="radio" name="q4" value="D"> D. Function</label>
+                    </div>
+                </div>
+
+                <div class="sporsmal-container">
+                    <p>Spørsmål 5: Hva brukes GetElementById til?</p>
+                    <div class="alternativer-container">
+                        <label class="alternativ-label"><input type="radio" name="q5" value="A"> A. Hente ut ID´er og
+                            klasser</label>
+                        <label class="alternativ-label"><input type="radio" name="q5" value="B"> B. Hente ut
+                            klasser</label>
+                        <label class="alternativ-label"><input type="radio" name="q5" value="C"> C. Endre en
+                            variabel</label>
+                        <label class="alternativ-label"><input type="radio" name="q5" value="D"> D. Hente ut
+                            ID´er</label>
+                    </div>
+                </div>
+
+                <div class="sporsmal-container">
+                    <p>Spørsmål 6: I hvilken sammenheng brukes RGB systemet?</p>
+                    <div class="alternativer-container">
+                        <label class="alternativ-label"><input type="radio" name="q6" value="A"> A. Linke HTML sider til
+                            CSS</label>
+                        <label class="alternativ-label"><input type="radio" name="q6" value="B"> B. Bestemme farger
+                            digitalt</label>
+                        <label class="alternativ-label"><input type="radio" name="q6" value="C"> C. Legge bilder inn i
+                            en HTML</label>
+                        <label class="alternativ-label"><input type="radio" name="q6" value="D"> D. Komprimere lyd
+                            digitalt</label>
+                    </div>
+                </div>
+
+                <div class="sporsmal-container">
+                    <p>Spørsmål 7: Hva er www.google.com et eksempel på?</p>
+                    <div class="alternativer-container">
+                        <label class="alternativ-label"><input type="radio" name="q7" value="A"> A. IP-adresse</label>
+                        <label class="alternativ-label"><input type="radio" name="q7" value="B"> B. Adressen til
+                            nettstedet</label>
+                        <label class="alternativ-label"><input type="radio" name="q7" value="C"> C. Et domene</label>
+                        <label class="alternativ-label"><input type="radio" name="q7" value="D"> D. En URL</label>
+                    </div>
+                </div>
+
+                <div class="sporsmal-container">
+                    <p>Spørsmål 8: Er HTTPS eller HTTP mest sikret?: </p>
+                    <div class="alternativer-container">
+                        <label class="alternativ-label"><input type="radio" name="q8" value="A"> A. HTTPS </label>
+                        <label class="alternativ-label"><input type="radio" name="q8" value="B"> B. HTTP</label>
+                        <label class="alternativ-label"><input type="radio" name="q8" value="C"> C. De er like
+                            sikre</label>
+                        <label class="alternativ-label"><input type="radio" name="q8" value="D"> D. Navnet er ubetydelig
+                            for sikkerheten</label>
+                    </div>
+                </div>
+
+                <div class="sporsmal-container">
+                    <p>Spørsmål 9: Hvilket programmeringsspråk ble utviklet av Microsoft og er mye brukt for å lage
+                        Windows-applikasjoner?</p>
+                    <div class="alternativer-container">
+                        <label class="alternativ-label"><input type="radio" name="q9" value="A"> A. Python</label>
+                        <label class="alternativ-label"><input type="radio" name="q9" value="B"> B. Java</label>
+                        <label class="alternativ-label"><input type="radio" name="q9" value="C"> C. C#</label>
+                        <label class="alternativ-label"><input type="radio" name="q9" value="D"> D. Ruby</label>
+                    </div>
+                </div>
+
+                <div class="sporsmal-container">
+                    <p>Spørsmål 10: Hva er en SSD?</p>
+                    <div class="alternativer-container">
+                        <label class="alternativ-label"><input type="radio" name="q10" value="A"> A. System Status
+                            Detector</label>
+                        <label class="alternativ-label"><input type="radio" name="q10" value="B"> B. Software Security
+                            Database</label>
+                        <label class="alternativ-label"><input type="radio" name="q10" value="C"> C. Super Speed
+                            Device</label>
+                        <label class="alternativ-label"><input type="radio" name="q10" value="D"> D. Solid State
+                            Drive</label>
+                    </div>
+                </div>
+
+                <button class="sjekk-resultat-btn" onclick="beregnResultat()">Sjekk resultat</button>
+                <div class="krav_quiz">Få 8 eller mer poeng for å bestå!</div>
+                <div class="resultat" id="resultat"></div>
+            </div>
+
+        </section>
+
+    </section>
+
+    <section class="tap">
+        <p class="p_elm_tap">Du Tapte</p>
+    </section>
+
+    <section class="body_muldvarp">
+
+        <div class="tekst">
+            <h2 class="slo_mulvarpen_h2">Slå til Muldvarpen minst 15 ganger!</h2>
+            <h2>Din score:</h2>
+            <h2 id="score">0</h2>
+
+            <h2>Gjenstående tid:</h2>
+            <h2 id="tid">20</h2>
+        </div>
+
+        <div class="grid">
+            <div class="rute" id="1"></div>
+            <div class="rute" id="2"></div>
+            <div class="rute" id="3"></div>
+            <div class="rute" id="4"></div>
+            <div class="rute" id="5"></div>
+            <div class="rute" id="6"></div>
+            <div class="rute" id="7"></div>
+            <div class="rute" id="8"></div>
+            <div class="rute" id="9"></div>
+        </div>
+
+    </section>
+
+
+
+    <script src="script.js"></script>
+    <script src="index.js"></script>
+    <script src="script_memory.js"></script>
+    <script src="spill.js"></script>
+    <script src="mulvarp.js"></script>
+
+</body>
+
+</html>

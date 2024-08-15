@@ -1,0 +1,589 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	max-width: 1400px;
+	margin: 0 auto;
+}
+
+.flex {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	position: relative;
+	margin: 20px;
+}
+
+.showcase {
+	position: absolute;
+	right: 0;
+	width: 100%;
+	height: 100vh;
+	padding: 100px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #111;
+	color: white;
+	z-index: 2;
+}
+
+.showcase video {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.6;
+}
+
+.text {
+	position: relative;
+	z-index: 10;
+}
+
+.text h2 {
+	font-size: 6em;
+}
+
+.text h1 {
+	font-size: 3em;
+}
+
+.text p {
+	font-size: 1.5em;
+	margin: 20px 0;
+	font-weight: 400;
+	max-width: 700px;
+}
+
+nav {
+	top: 0;
+	width: 100%;
+	background-color: #233a67;
+	color: white;
+}
+
+.navflex {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 20px;
+}
+
+nav .navflex {
+	height: auto;
+}
+
+nav ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 20px;
+	list-style: none;
+}
+
+nav ul li {
+	flex: 1 1 auto;
+	text-align: center;
+}
+
+nav img {
+	max-height: 70px;
+	margin: 20px;
+}
+
+nav ul li a {
+	text-decoration: none;
+	color: white;
+	font-size: 1.5em;
+	text-align: center;
+}
+
+nav ul li:hover {
+	background-color: #657dac;
+	border-radius: 50px;
+	text-decoration: whitesmoke;
+}
+
+.destinasjonbilde img {
+	width: 100%;
+	height: auto;
+	filter: grayscale(30%);
+}
+
+#hva h1 {
+	width: 100%;
+	text-align: center;
+	margin: 40px 0;
+}
+
+#hva h1 span {
+	background: #9fa6b6;
+	color: white;
+	border-radius: 50px;
+	padding: 0 20px;
+}
+
+.box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.box img {
+	margin: 30px;
+	height: 500px;
+	width: 500px;
+	border-radius: 70px;
+	transition: transform 0.8s;
+}
+
+.box img:hover {
+	transform: scale(1.1);
+}
+
+.box a {
+	text-decoration: none;
+}
+
+.dintro p {
+	text-align: center;
+	font: 1em sans-serif;
+	color: rgb(100, 95, 95);
+	margin: 10px;
+}
+
+.reglerbilde {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.reglerbilde img {
+	height: 300px;
+	width: 453px;
+}
+
+main {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+.mainbp img {
+	width: 718px;
+	height: 500px;
+}
+
+.mainbp p {
+	text-align: center;
+	font: 1em sans-serif;
+	color: rgb(100, 95, 95);
+	margin-top: 20px;
+}
+
+.dintro ul li {
+	text-align: justify;
+	font: 1em sans-serif;
+	color: rgb(100, 95, 95);
+	margin-left: 370px;
+	margin-top: 10px;
+}
+
+.flexutstyr {
+	margin: 20px;
+	padding: 10px;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.flexutstyr h2 {
+	font-size: 50px;
+	color: #233a67;
+}
+
+.flexutstyr p {
+	font: 1em sans-serif;
+	color: rgb(100, 95, 95);
+	margin-top: 5px;
+	margin-bottom: 50px;
+}
+
+.regler {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+.regler img {
+	position: absolute;
+	width: 100%;
+}
+
+.fjellregler h1 {
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+.fjellregler h1 span {
+	position: relative;
+	background: #9fa6b6;
+	color: white;
+	border-radius: 50px;
+	padding: 0 70px;
+	margin: 40px;
+	margin-top: 10%;
+}
+
+.fjellregler ul li {
+	list-style: none;
+	text-decoration: none;
+	padding: 10px;
+	font-size: 20px;
+	margin-left: 40px;
+}
+
+.fjellregler ul li:hover {
+	color: #657dac;
+}
+
+.alpinregler h1 {
+	text-align: center;
+	margin-top: 40px;
+	margin-bottom: 10px;
+}
+
+.alpinregler h1 span {
+	position: relative;
+	background: #9fa6b6;
+	color: white;
+	border-radius: 50px;
+	padding: 0 70px;
+	margin: 40px;
+	margin-top: 10%;
+}
+
+.alpinregler ul li {
+	color: black;
+	list-style: none;
+	text-decoration: none;
+	padding: 10px;
+	font-size: 20px;
+	margin-left: 200px;
+}
+
+
+.alpinregler ul li:hover {
+	color: #657dac;
+}
+
+.reglerunder {
+	display: flex;
+	justify-content: center;
+}
+
+.reglerunder video {
+	margin: 50px;
+}
+
+.destinasjonbilde h2 {
+	font-size: 100px;
+	color: #657dac;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.hemsedal {
+	display: flex;
+	flex-direction: row;
+}
+
+.hemsedal img {
+	width: 800px;
+	margin-left: 40px;
+}
+
+.hemsedal ul li {
+	margin-left: 50px;
+	font-size: 40px;
+	color: rgb(100, 95, 95);
+	padding-bottom: 10px;
+}
+
+.hemsedal ul li:hover {
+	color: #233a67;
+}
+
+.nbilde {
+	display: flex;
+	flex-direction: row;
+}
+
+.nbilde img {
+	width: 400px;
+	height: 300px;
+	margin: 30px;
+}
+
+.offpist {
+	display: flex;
+	flex-direction: row;
+}
+
+.offpist img {
+	height: 300px;
+	width: 453px;
+}
+
+.offpist video {
+	height: 300px;
+}
+
+.flex h3 {
+	margin-left: 11px;
+	color: #233a67;
+	font-size: 50px;
+}
+
+.flex img {
+	width: 300px;
+	margin-left: 10px;
+	margin: 10px;
+	border-radius: 50%;
+}
+
+.en img {
+	height: 302px;
+	transition: transform 0.8s;
+}
+
+.en img:hover {
+	transform: scale(1.09);
+}
+
+.to img {
+	height: 302px;
+	transition: transform 0.8s;
+}
+
+.to img:hover {
+	transform: scale(1.09);
+}
+
+.tre img {
+	height: 302px;
+	transition: transform 0.8s;
+}
+
+.tre img:hover {
+	transform: scale(1.09);
+}
+
+.fire img {
+	height: 302px;
+	transition: transform 0.8s;
+}
+
+.fire img:hover {
+	transform: scale(1.09);
+}
+
+.fem img {
+	height: 302px;
+	transition: transform 0.8s;
+}
+
+.fem img:hover {
+	transform: scale(1.09);
+}
+
+.flex p {
+	color: rgb(100, 95, 95);
+	margin-left: 10px;
+}
+
+footer {
+	margin-top: 50px;
+	background-color: #0f192c;
+	color: #fff;
+	padding: 30px 0px;
+	font-weight: bold;
+}
+
+.containerto {
+	max-width: 90%;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.col {
+	flex: 0 0 33%;
+	max-width: 33%;
+	text-align: center;
+}
+
+.col h3 {
+	margin-bottom: 15px;
+	color: #657dac;
+}
+
+.col ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.col li {
+	margin-bottom: 10px;
+}
+
+.col ul li:hover {
+	text-decoration: underline;
+}
+
+.rad {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+	margin-top: 300px;
+}
+
+.footer {
+	flex: 0 0 33%;
+	max-width: 33%;
+	text-align: center;
+}
+
+.footer h3 {
+	margin-bottom: 15px;
+	color: #0f192c;
+}
+
+.footer ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.footer li {
+	margin-bottom: 10px;
+}
+
+.footer ul li:hover {
+	text-decoration: underline;
+}
+
+
+@media screen and (max-width: 1200px) {
+	.showcase {
+		padding: 50px;
+	}
+
+	.text h2 {
+		font-size: 4em;
+	}
+
+	.text h1 {
+		font-size: 2em;
+	}
+
+	.text p {
+		font-size: 1em;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		padding: 0 20px;
+	}
+
+	.flex {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.showcase {
+		padding: 20px;
+	}
+
+	nav img {
+		max-height: 50px;
+		margin: 5px;
+	}
+
+	.hemsedal {
+		flex-direction: column;
+	}
+
+	.hemsedal img {
+		width: 500px;
+		margin-left: 10px;
+	}
+
+	.hemsedal ul li {
+		font-size: 20px;
+	}
+
+	.nbilde {
+		flex-direction: column;
+	}
+
+	.reglerbilde {
+		flex-direction: column-reverse;
+		margin-left: 40px;
+	}
+
+	.regler {
+		flex-direction: column;
+		font-size: 10px;
+
+	}
+
+	.alpinregler ul li {
+		margin-left: 40px;
+	}
+
+	.reglerunder video {
+		width: 400px;
+	}
+
+	main{
+		flex-direction: row;
+	}
+
+	.mainbp img{
+		width: 300px;
+		height: 300px;
+	}
+
+	.dintro ul li{
+	text-align: justify;
+	font: 1em sans-serif;
+	color: rgb(100, 95, 95);
+	margin-top: 10px;
+	margin-right: 10px;
+	}
+
+	.offpist{
+		flex-direction: column;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+}

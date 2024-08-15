@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="no">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" type="png" href="bilder/swords.png">
+    <title>Spritesheet/Parallax</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+
+<body>
+
+    <div class="mobil-burgermeny">
+        <img src="bilder/bar.png" alt="burgermeny">
+    </div>
+
+    <header class="header-main">
+        <nav>
+            <a href="index.html" class="logo">
+                <img src="bilder/swords.png" alt="Swords">
+            </a>
+            <ul>
+                <li><a href="index.html">Hjem</a></li>
+                <li><a href="#">Spritesheet</a>
+                    <ul>
+                        <li><a href="spritesheet-om.html">Om Spritesheet</a></li>
+                        <li><a href="spritesheet-bruksmate.html">Bruksmåte</a></li>
+                        <li><a href="spritesheet-eksempler.html">Eksempler</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Parallax</a>
+                    <ul>
+                        <li><a href="parallax-om.html">Om Parallax</a></li>
+                        <li><a href="parallax-bruksmate.html">Bruksmåte</a></li>
+                        <li><a href="parallax-eksempler.html">Eksempler</a></li>
+                    </ul>
+                </li>
+                <li><a href="./Spill/spill.html">Spill</a></li>
+            </ul>
+        </nav>
+        <div class="sf">
+            <form action="" method="post" id="searchForm">
+                <input type="text" name="search" placeholder="Search..." id="searchInput" data-search
+                    autocomplete="off">
+                <button type="submit" id="searchButton"><img src="bilder/magnifying-glass.png"
+                        alt="search button"></button>
+            </form>
+            <div class="ikoner">
+                <img src="bilder/board-game.png" alt="Board Game">
+            </div>
+        </div>
+    </header>
+
+    <section class="forside">
+        <div class="hjem-tekst">
+            <h1>Om <br> Spritesheet</h1>
+            <h2>Her kan du lese <br> mer om en kul metode innenfor spill-utvikling</h2>
+            <a href="spritesheet-eksempler.html" class="knapp">Eksempler</a>
+        </div>
+
+        <div class="forsidebilde">
+            <img src="bilder/game-controller.png" alt="kontroller">
+        </div>
+    </section>
+
+    <section class="spritesheet-section">
+        <h3 class="spritesheet-info-overskrift">Generell Bruk</h3>
+        <div class="spritesheet-info">
+            <img src="bilder/website.png" alt="spritesheet">
+            <div>
+                <h4>Hva er det?</h4>
+                <p>En spritesheet er en enkelt bildefil som inneholder flere mindre bilder, vanligvis arrangert i en rutenettformasjon. Dette konseptet er spesielt vanlig innen webutvikling, der det brukes til å optimalisere lastingstiden til nettsider ved å redusere antall serverforespørsler.</p>
+                <h4>Bruk?</h4>
+                <p>Når en nettside bruker spritesheets, lastes bare én bildefil ned, selv om den inneholder flere bilder. Dette reduserer antall HTTP-forespørsler som kreves for å laste siden, noe som resulterer i raskere lastingstid og forbedret ytelse. Spritesheets er spesielt nyttige for små grafiske elementer som ikoner, knapper og animasjoner.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="spritesheet-section" id="spritesheet-section2">
+        <h3 class="spritesheet-info-overskrift">Bruk innenfor spill-utvikling</h3>
+        <div class="spritesheet-info">
+            <img src="bilder/programing.png" alt="spritesheet">
+            <div>
+                <h4>Hva er det?</h4>
+                <p>I spillutvikling er spritesheets en uunnværlig ressurs for å håndtere grafiske elementer effektivt. En spritesheet er en enkelt bildefil som inneholder flere mindre bilder, ofte organisert i en rutenettformasjon. Denne tilnærmingen er avgjørende for å optimalisere ytelsen til spill ved å minimere belastningen på grafikkprosessoren og redusere behovet for hyppig filtilgang.</p>
+                <h4>Bruk?</h4>
+                <p>En av de største fordelene med spritesheets i spillutvikling er evnen til å oppnå jevn og responsiv animasjon. Ved å organisere animasjonsrammer i en spritesheet kan spillutviklere enkelt styre sekvensen av bilder som vises for å skape realistiske bevegelser for spillfigurer.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="footerid">
+        <div class="footer">
+            <div class="main">
+
+                <div class="footer-liste" id="footer-linker">
+                    <h3>Spritesheet's</h3>
+                    <ul>
+                        <li><a href="https://kidscancode.org/godot_recipes/3.x/animation/spritesheet_animation/index.html">Eksempel 1</a>
+                        </li>
+                        <li><a href="https://doc.stride3d.net/latest/en/manual/sprites/index.html">Eksempel 2</a></li>
+                        <li><a href="https://medium.com/@jonathan.k.tung/sprite-animations-on-the-web-48ec1bfe190e">Eksempel 3</a></li>
+                    </ul>
+                </div>
+
+
+                <div class="footer-liste" id="footer-linker">
+                    <h3>Spritesheet  Bruk</h3>
+                    <ul>
+                        <li><a href="https://www.codeandweb.com/texturepacker/tutorials/how-to-create-a-sprite-sheet">Create</a>
+                        </li>
+                        <li><a href="https://codeshack.io/images-sprite-sheet-generator/">Generate</a></li>
+                        <li><a href="https://www.w3schools.com/css/css_image_sprites.asp)">W3S Use</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-liste" id="footer-linker">
+                    <h3>Parallax</h3>
+                    <ul>
+                        <li><a href="https://medium.com/@jonathansychan/the-beauty-of-multi-parallax-scrolling-c093f583b908">Eksempel 1</a></li>
+                        <li><a href="https://opengameart.org/content/3-parallax-backgrounds">Eksempel 2</a>
+                        </li>
+                        <li><a href="https://www.gamedevmarket.net/asset/2d-field-parallax-background">Eksempel 3</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-liste" id="footer-linker">
+                    <h3>Parallax  Bruk</h3>
+                    <ul>
+                        <li><a href="https://blog.logrocket.com/create-parallax-scrolling-css/">Create</a></li>
+                        <li><a href="https://www.vev.design/parallax-website/">Generate</a></li>
+                        <li><a href="https://www.w3schools.com/howto/howto_css_parallax.asp">W3S Use</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+<script src="javascript/hamburgermeny.js"></script>
+<script src="javascript/sok.js"></script>
+</body>
+</html>

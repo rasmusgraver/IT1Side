@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #1F2833;
+}
+
+
+
+#canvas1 {
+    border: 5px solid #66FCF1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 0.5rem;
+}
+
+#player, #layer1, #layer2, #layer3, #layer4, #layer5, #layer6 {
+    display: none;
+}
+
+.knapp {
+    margin: 10px;
+    display: inline-block;
+    padding: 14px 24px;
+    color: white;
+    border-radius: 0.5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border: 0.2rem solid #66FCF1;
+    text-decoration: none;
+}
+
+.knapp:hover {
+    transform: scale(1.01) translateY(10px);
+    transition: .4s;
+    cursor: pointer;
+}

@@ -1,0 +1,71 @@
+.body_muldvarp {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/*display: grid;
+  grid-template-columns: 0.5fr 1fr;
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-column-start: 1;
+  grid-column-end: 2;*/
+.grid {
+  width: 620px;
+  height: 620px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: auto;
+  position: relative;
+  bottom: 400px
+}
+
+.rute {
+  height: 200px;
+  width: 200px;
+  border-style: solid;
+  border-color: black;
+  background-color: rgb(72, 29, 29);
+  border-radius: 30%;
+}
+
+.mulvarp {
+  background-image: url("Bilder/mulvarp.png");
+  background-size: cover;
+}
+
+.body_muldvarp {
+  background-image: url("Bilder/gress.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+h2 {
+  color: whitesmoke;
+  margin-left: 20px;
+}
+
+.tekst {
+  height: 500px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 120px;
+  background-color: grey;
+  justify-content: space-evenly;
+  border: 3px solid black;
+  position: relative;
+  top: 50px;
+
+}
+
+.body_muldvarp {
+  display: none;
+}
+
+.slo_mulvarpen_h2 {
+  color: greenyellow;
+}
