@@ -1,2 +1,3 @@
-# IT1 eksempel-sider
-En samling med nettsider fra tidligere IT1 elever
+# IT1
+- Oversikt over pensum
+- En samling med nettsider fra tidligere IT1 elever
