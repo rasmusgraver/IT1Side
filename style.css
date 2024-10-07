@@ -52,7 +52,8 @@ td {
     height: 150px;
     border: 1px solid black;
     text-align: center;
-    background-color: lightskyblue;
+    background-color: aliceblue;
+    font-size: 20px;
 }
 .final td {
     background-color: #84e7af;
