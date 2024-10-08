@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+li {
+    list-style: none;
+}
+
 body {
     background-color: lightblue;
     font-family: "Poppins", sans-serif;
@@ -28,6 +32,12 @@ body {
 ul li {
     padding: 10px 2px;
 }
+table ul li {
+    padding: 0;
+}
+table ul li:nth-of-type(even) {
+    background-color: #e1e8ef;
+}
 li a {
     text-decoration: none;
     color: inherit;
@@ -49,7 +59,7 @@ a {
 }
 td {
     width: 150px;
-    height: 150px;
+    height: 120px;
     border: 1px solid black;
     text-align: center;
     background-color: aliceblue;
